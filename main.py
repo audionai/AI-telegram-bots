@@ -17,7 +17,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     message_user = update.message.text
     client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="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",
     )
 
     completion = client.chat.completions.create(
