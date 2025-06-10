@@ -17,7 +17,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     message_user = update.message.text
     client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="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",
     )
 
     completion = client.chat.completions.create(
@@ -25,8 +25,9 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "HTTP-Referer": "<YOUR_SITE_URL>", # Optional. Site URL for rankings on openrouter.ai.
         "X-Title": "<YOUR_SITE_NAME>", # Optional. Site title for rankings on openrouter.ai.
     },
-    # model="deepseek/deepseek-r1-0528:free",
-    model="deepseek/deepseek-prover-v2:free",
+    model="deepseek/deepseek-r1-0528:free",
+    # model="deepseek/deepseek-prover-v2:free",
+        # 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
     messages=[
         {
         "role": "user",
