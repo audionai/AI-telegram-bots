@@ -1,8 +1,6 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from openai import OpenAI
-BOT_TOKEN = "7611741184:AAGQR0it2N8bH8yeAMUcT-y4Md7Fk95Fkhg"  # Replace with the token from BotFather
-# Command: /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hello! I am your bot 😎")
 # Echo other messages
